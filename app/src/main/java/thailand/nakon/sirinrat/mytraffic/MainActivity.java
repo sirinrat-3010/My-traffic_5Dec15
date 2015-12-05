@@ -1,6 +1,8 @@
 package thailand.nakon.sirinrat.mytraffic;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
             //Sound Effect
                 MediaPlayer buttonMediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.cow);
                 buttonMediaPlayer.start();
+
+                //Intent to webView
+                Intent objIntent = new Intent(Intent.ACTION_VIEW);
+                objIntent.setData(Uri.parse("https://youtu.be/xWvOpX-Jxg4"));
+                startActivity(objIntent);
             }//event
         });
     }

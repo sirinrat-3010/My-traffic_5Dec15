@@ -20,6 +20,10 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen" >
+        </activity>
     </application>
 
 </manifest>

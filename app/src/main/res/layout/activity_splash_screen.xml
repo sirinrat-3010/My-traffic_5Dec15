@@ -12,6 +12,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView3"
         android:src="@drawable/logo300"
-        android:layout_alignParentStart="false"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

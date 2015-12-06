@@ -30,5 +30,6 @@
         android:layout_below="@+id/textView"
         android:layout_above="@+id/button"
         android:layout_alignWithParentIfMissing="false"
-        android:layout_margin="20dp" />
+        android:layout_margin="20dp"
+        android:background="#96ffffff" />
 </RelativeLayout>

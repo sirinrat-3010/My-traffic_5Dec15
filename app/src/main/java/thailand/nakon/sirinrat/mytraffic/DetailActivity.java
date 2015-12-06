@@ -29,11 +29,14 @@ public class DetailActivity extends AppCompatActivity {
     private void showView() {
      //Receive Value From Intent
      String strTitle = getIntent().getStringExtra("Title");
-     int intIcon = getIntent().getIntExtra("Image",R.drawable.traffic_01);
+     int intIcon = getIntent().getIntExtra("Image", R.drawable.traffic_01);
      int index  = getIntent().getIntExtra("Index",0 );
 
      titleTextView.setText(strTitle);
      trafficImageView.setImageResource(intIcon);
+
+        String[] strDetail = getResources().getStringArray(R.array.detail_long);
+        DetailTextView.setText(strDetail[index]);
 
     }
 
